@@ -11,6 +11,7 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import profile from "../public/profile.JPG";
 import { useState } from "react";
+import ScrollToTop from "react-scroll-to-top";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,8 +34,8 @@ export default function Home() {
 
 			<main className="bg-white px-10 md:px-20 lg:px-40">
 				<section className="min-h-screen">
-					<nav className="py-10 mb-12 flex justify-between ">
-						<h1 className="text-xl font-burtons">developedbyR</h1>
+					<nav className="mb-12 flex justify-between py-10">
+						<h1 className="font-burtons text-xl">builtbyR</h1>
 						<ul className="flex items-center">
 							<li>
 								<AiFillFolderOpen
@@ -42,25 +43,25 @@ export default function Home() {
 									className="cursor-pointer text-2xl"
 								/>
 							</li>
-							<li className="bg-gradient-to-r from-gray-400 to-gray-700 text-white px-4 py-2 rounded-md ml-8">
+							<li className="ml-8 rounded-md bg-gradient-to-r from-gray-400 to-gray-700 px-4 py-2 text-white">
 								<a href="#">Resume</a>
 							</li>
 							<li></li>
 						</ul>
 					</nav>
-					<div className="text-center p-10">
-						<h2 className="text-5xl py-2 text-gray-800 font-medium md:text-6xl lg:text-12xl">
-							Mohd Razzeq
+					<div className="mt-auto p-10 pb-10 text-center">
+						<h2 className="lg:text-12xl py-2 text-5xl font-medium text-gray-800 md:text-6xl">
+							Razzeq
 						</h2>
-						<h3 className="text-2xl py-2 md:text-3xl dark:text-gray-500">
+						<h3 className="py-2 text-2xl dark:text-gray-500 md:text-3xl">
 							Software Engineer
 						</h3>
-						<p className="text-md py-5 leading-8 text-grey-800 md:text-xl max-w-lg mx-auto">
+						<p className="text-md text-grey-800 mx-auto max-w-lg py-5 leading-8 md:text-xl">
 							Love all things about backend technologies and
 							learning about them !
 						</p>
 					</div>
-					<div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
+					<div className="flex justify-center gap-16 py-3 text-5xl text-gray-600">
 						<a
 							href="https://www.linkedin.com/in/razzeq/"
 							target="_blank"
@@ -76,14 +77,14 @@ export default function Home() {
 							<AiFillGithub />
 						</a>
 					</div>
-					<div className="relative mx-auto bg-gradient-to-b from-gray-600 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96 ">
+					<div className="relative mx-auto mt-20 h-80 w-80 overflow-hidden rounded-full md:h-96 md:w-96 ">
 						<Image src={profile} layout="fill" objectFit="cover" />
 					</div>
 				</section>
-				{/*  */}
+				{/* Project Section */}
 				<section>
 					<div>
-						<h3 className="text-3xl py-1">Projects</h3>
+						<h3 className="py-1 text-3xl">Projects</h3>
 						<p className="text-md py-2 leading-8 text-gray-800">
 							Lorem ipsum dolor sit amet consectetur adipisicing
 							elit. Ipsam voluptates rem placeat sed iste possimus
@@ -91,15 +92,15 @@ export default function Home() {
 							rerum nam inventore facilis molestias in ex quo!
 						</p>
 					</div>
-					<div className="lg:flex gap-10">
-						<div className="text-center shadow-lg p-10 rounded-xl my-10">
+					<div className="gap-10 lg:flex">
+						<div className="my-10 rounded-xl p-10 text-center shadow-lg">
 							<Image
 								className="mx-auto"
 								src={design}
 								width={100}
 								height={100}
 							/>
-							<h3 className="text-lg font-medium pt-8 pb-2">
+							<h3 className="pt-8 pb-2 text-lg font-medium">
 								Library Systems
 							</h3>
 							<p className="py-2">
@@ -111,16 +112,16 @@ export default function Home() {
 								quam.
 							</p>
 							<h4 className="py-4 text-teal-600">Technologies</h4>
-							<p className="text-gray-800 py-1">Django</p>
+							<p className="py-1 text-gray-800">Django</p>
 						</div>
-						<div className="text-center shadow-lg p-10 rounded-xl my-10">
+						<div className="my-10 rounded-xl p-10 text-center shadow-lg">
 							<Image
 								className="mx-auto"
 								src={consulting}
 								width={100}
 								height={100}
 							/>
-							<h3 className="text-lg font-medium pt-8 pb-2">
+							<h3 className="pt-8 pb-2 text-lg font-medium">
 								Library Systems
 							</h3>
 							<p className="py-2">
@@ -132,16 +133,16 @@ export default function Home() {
 								quam.
 							</p>
 							<h4 className="py-4 text-teal-600">Technologies</h4>
-							<p className="text-gray-800 py-1">Django</p>
+							<p className="py-1 text-gray-800">Django</p>
 						</div>
-						<div className="text-center shadow-lg p-10 rounded-xl my-10">
+						<div className="my-10 rounded-xl p-10 text-center shadow-lg">
 							<Image
 								className="mx-auto"
 								src={code}
 								width={100}
 								height={100}
 							/>
-							<h3 className="text-lg font-medium pt-8 pb-2">
+							<h3 className="pt-8 pb-2 text-lg font-medium">
 								Library Systems
 							</h3>
 							<p className="py-2">
@@ -153,13 +154,14 @@ export default function Home() {
 								quam.
 							</p>
 							<h4 className="py-4 text-teal-600">Technologies</h4>
-							<p className="text-gray-800 py-1">Django</p>
+							<p className="py-1 text-gray-800">Django</p>
 						</div>
 					</div>
 				</section>
+				{/* Portfolio Section WIP */}
 				<section>
 					<div>
-						<h3 className="text-3xl py-1">Portfolio</h3>
+						<h3 className="py-1 text-3xl">Portfolio</h3>
 						<p className="text-md py-2 leading-8 text-gray-800">
 							Lorem ipsum dolor sit amet consectetur adipisicing
 							elit. Ipsam voluptates rem placeat sed iste possimus
@@ -168,7 +170,7 @@ export default function Home() {
 						</p>
 					</div>
 					<div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-						<div className="basis-1/3 flex-1">
+						<div className="flex-1 basis-1/3">
 							<Image
 								src={web1}
 								className="rounded-lg object-cover"
@@ -177,7 +179,7 @@ export default function Home() {
 								layout={"responsive"}
 							/>
 						</div>
-						<div className="basis-1/3 flex-1">
+						<div className="flex-1 basis-1/3">
 							<Image
 								src={web2}
 								className="rounded-lg object-cover"
@@ -186,7 +188,7 @@ export default function Home() {
 								layout={"responsive"}
 							/>
 						</div>
-						<div className="basis-1/3 flex-1">
+						<div className="flex-1 basis-1/3">
 							<Image
 								src={web3}
 								className="rounded-lg object-cover"
@@ -195,7 +197,7 @@ export default function Home() {
 								layout={"responsive"}
 							/>
 						</div>
-						<div className="basis-1/3 flex-1">
+						<div className="flex-1 basis-1/3">
 							<Image
 								src={web4}
 								className="rounded-lg object-cover"
@@ -207,6 +209,7 @@ export default function Home() {
 					</div>
 				</section>
 			</main>
+			<ScrollToTop smooth className="mt-auto flex justify-center pt-1" />
 		</div>
 	);
 }
