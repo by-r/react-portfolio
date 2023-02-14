@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 import { AiFillFolderOpen, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
