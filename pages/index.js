@@ -35,7 +35,9 @@ export default function Home() {
 			<main className="bg-white px-10 md:px-20 lg:px-40">
 				<section className="min-h-screen">
 					<nav className="mb-12 flex justify-between py-10">
-						<h1 className="font-burtons text-xl">builtbyR</h1>
+						<h1 className="flex items-center font-burtons text-xl">
+							builtbyR
+						</h1>
 						<ul className="flex items-center">
 							<li>
 								<AiFillFolderOpen
@@ -43,10 +45,9 @@ export default function Home() {
 									className="cursor-pointer text-2xl"
 								/>
 							</li>
-							<li className="ml-8 rounded-md bg-gradient-to-r from-gray-400 to-gray-700 px-4 py-2 text-white">
+							<button className="ml-8 rounded-md bg-gradient-to-r from-gray-400 to-gray-700 px-4 py-2 text-white">
 								<a href="#">Resume</a>
-							</li>
-							<li></li>
+							</button>
 						</ul>
 					</nav>
 					<div className="mt-auto p-10 pb-10 text-center">
@@ -77,10 +78,11 @@ export default function Home() {
 							<AiFillGithub />
 						</a>
 					</div>
-					<div className="relative mx-auto mt-20 h-80 w-80 overflow-hidden rounded-full md:h-96 md:w-96 ">
+					<div className="relative mx-auto mt-20 h-80 w-80 overflow-hidden rounded-full md:h-96 md:w-96">
 						<Image src={profile} layout="fill" objectFit="cover" />
 					</div>
 				</section>
+
 				{/* Project Section */}
 				<section>
 					<div>
@@ -104,12 +106,10 @@ export default function Home() {
 								Library Systems
 							</h3>
 							<p className="py-2">
-								Lorem ipsum, dolor sit amet consectetur
-								adipisicing elit. Perferendis eos, neque nemo
-								dolores, molestias aliquid laborum aspernatur
-								obcaecati fugit ullam accusamus. Illum quo
-								praesentium ut expedita sequi dolor ratione
-								quam.
+								Tried going all-in by building a full stack
+								webapp, currently a work-in-progress, still
+								trying to finish it and figuring out Django's
+								MTV structure
 							</p>
 							<h4 className="py-4 text-teal-600">Technologies</h4>
 							<p className="py-1 text-gray-800">Django</p>
@@ -125,12 +125,10 @@ export default function Home() {
 								Library Systems
 							</h3>
 							<p className="py-2">
-								Lorem ipsum, dolor sit amet consectetur
-								adipisicing elit. Perferendis eos, neque nemo
-								dolores, molestias aliquid laborum aspernatur
-								obcaecati fugit ullam accusamus. Illum quo
-								praesentium ut expedita sequi dolor ratione
-								quam.
+								Tried going all-in by building a full stack
+								webapp, currently a work-in-progress, still
+								trying to finish it and figuring out Django's
+								MTV structure
 							</p>
 							<h4 className="py-4 text-teal-600">Technologies</h4>
 							<p className="py-1 text-gray-800">Django</p>
@@ -146,18 +144,17 @@ export default function Home() {
 								Library Systems
 							</h3>
 							<p className="py-2">
-								Lorem ipsum, dolor sit amet consectetur
-								adipisicing elit. Perferendis eos, neque nemo
-								dolores, molestias aliquid laborum aspernatur
-								obcaecati fugit ullam accusamus. Illum quo
-								praesentium ut expedita sequi dolor ratione
-								quam.
+								Tried going all-in by building a full stack
+								webapp, currently a work-in-progress, still
+								trying to finish it and figuring out Django's
+								MTV structure
 							</p>
 							<h4 className="py-4 text-teal-600">Technologies</h4>
 							<p className="py-1 text-gray-800">Django</p>
 						</div>
 					</div>
 				</section>
+
 				{/* Portfolio Section WIP */}
 				<section>
 					<div>
