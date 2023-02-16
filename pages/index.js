@@ -206,7 +206,7 @@ export default function Home() {
 					</div>
 				</section>
 			</main>
-			<ScrollToTop smooth className="mt-auto flex justify-center pt-1" />
+			<ScrollToTop smooth className="mt-auto flex justify-center pt-1 animate-pulse" />
 		</div>
 	);
 }
