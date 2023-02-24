@@ -116,19 +116,28 @@ export default function Home() {
 							<div>
 								<Carousel showThumbs={false}>
 									<div>
-										<Image src={p2image1} />
+										<Image
+											src={p2image1}
+											alt="Catalog View"
+										/>
 										<p className="legend">
 											Book Catalog View
 										</p>
 									</div>
 									<div>
-										<Image src={p2image2} />
+										<Image
+											src={p2image2}
+											alt="Book Detail"
+										/>
 										<p className="legend">
 											Book Detail View
 										</p>
 									</div>
 									<div>
-										<Image src={p2image3} />
+										<Image
+											src={p2image3}
+											alt="Create Book"
+										/>
 										<p className="legend">
 											Book Create View
 										</p>
@@ -142,15 +151,31 @@ export default function Home() {
 							<h3 className="pt-8 pb-2 text-lg font-medium">
 								Library Systems
 							</h3>
+							<div className="flex items-center justify-center gap-1">
+								<a
+									href="https://github.com/rrzq/django-library-systems"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text-gray-700"
+								>
+									<AiFillGithub />
+								</a>
+								<a
+									href="https://github.com/rrzq/django-library-systems"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text-gray-700"
+								>
+									Github
+								</a>
+							</div>
 							<p className="py-2">
 								Tried going all-in by building a full stack
 								webapp, currently a work-in-progress, still
-								trying to finish it and figuring out Django's
-								MTV structure
+								trying to finish it and figuring out
+								Django&apos;s MTV structure
 							</p>
-							<h4 className="text-gray-800-900-900 py-4">
-								Technologies
-							</h4>
+							<h4 className="py-4 text-gray-600">Technologies</h4>
 							<div className="flex justify-center gap-16 py-3 text-5xl text-gray-600">
 								<a>
 									<DiDjango />
@@ -164,15 +189,21 @@ export default function Home() {
 							<div>
 								<Carousel showThumbs={false}>
 									<div>
-										<Image src={p1image1} />
+										<Image src={p1image1} alt="Main menu" />
 										<p className="legend">Main menu</p>
 									</div>
 									<div>
-										<Image src={p1image2} />
+										<Image
+											src={p1image2}
+											alt="Order Page"
+										/>
 										<p className="legend">Order Page</p>
 									</div>
 									<div>
-										<Image src={p1image3} />
+										<Image
+											src={p1image3}
+											alt="Admin Dashboard"
+										/>
 										<p className="legend">
 											Admin Dashboard
 										</p>
@@ -182,14 +213,31 @@ export default function Home() {
 							<h3 className="pt-8 pb-2 text-lg font-medium">
 								Food Ordering Systems
 							</h3>
+							<div className="flex items-center justify-center gap-1">
+								<a
+									href="https://github.com/rrzq/php-foodorderingsystem"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text-gray-700"
+								>
+									<AiFillGithub />
+								</a>
+								<a
+									href="https://github.com/rrzq/php-foodorderingsystem"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text-gray-700"
+								>
+									Github
+								</a>
+							</div>
 							<p className="py-2">
 								Project that was built for my final assesment
 								during my studies, handcrafted without using any
-								CSS library and vanilla PHP. Not my best work, I promise you.
+								CSS library and vanilla PHP. Not my best work, I
+								promise you.
 							</p>
-							<h4 className="text-gray-800-900-900 py-4">
-								Technologies
-							</h4>
+							<h4 className="py-4 text-gray-600">Technologies</h4>
 							<div className="flex justify-center gap-16 py-3 text-5xl text-gray-600">
 								<a>
 									<FaPhp />
@@ -206,7 +254,7 @@ export default function Home() {
 				</section>
 
 				{/* Portfolio Section WIP */}
-				<section>
+				{/* <section>
 					<div>
 						<h3 className="py-1 text-3xl">Portfolio</h3>
 						<p className="text-md py-2 leading-8 text-gray-800">
@@ -254,7 +302,7 @@ export default function Home() {
 							/>
 						</div>
 					</div>
-				</section>
+				</section> */}
 			</main>
 			<ScrollToTop
 				smooth
