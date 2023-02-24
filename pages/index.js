@@ -6,11 +6,6 @@ import { AiFillFolderOpen, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { FaPhp, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { DiDjango, DiBootstrap } from "react-icons/di";
 
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-
 import p1image1 from "../public/project1/p1_menu.png";
 import p1image2 from "../public/project1/p1_orderpage.png";
 import p1image3 from "../public/project1/p1_admindashboard.png";
@@ -272,7 +267,7 @@ export default function Home() {
 					<div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
 						<div className="flex-1 basis-1/3">
 							<Image
-								src={web1}
+								src={}
 								className="rounded-lg object-cover"
 								width={"100%"}
 								height={"100%"}
@@ -281,7 +276,7 @@ export default function Home() {
 						</div>
 						<div className="flex-1 basis-1/3">
 							<Image
-								src={web2}
+								src={}
 								className="rounded-lg object-cover"
 								width={"100%"}
 								height={"100%"}
@@ -290,7 +285,7 @@ export default function Home() {
 						</div>
 						<div className="flex-1 basis-1/3">
 							<Image
-								src={web3}
+								src={}
 								className="rounded-lg object-cover"
 								width={"100%"}
 								height={"100%"}
@@ -299,7 +294,7 @@ export default function Home() {
 						</div>
 						<div className="flex-1 basis-1/3">
 							<Image
-								src={web4}
+								src={}
 								className="rounded-lg object-cover"
 								width={"100%"}
 								height={"100%"}
