@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Inter } from "@next/font/google";
 import Image from "next/legacy/image";
 
-import { AiFillFolderOpen, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { FaPhp, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { DiDjango, DiBootstrap } from "react-icons/di";
 
@@ -49,14 +49,14 @@ export default function Home() {
 							builtbyR
 						</h1>
 						<ul className="flex items-center">
-							<li>
-								<AiFillFolderOpen
-									onClick={() => setDarkMode(!darkMode)}
-									className="cursor-pointer text-2xl"
-								/>
-							</li>
 							<button className="ml-8 rounded-md bg-gradient-to-r from-gray-400 to-gray-700 px-4 py-2 text-white">
-								<a href="#">Resume</a>
+								<a
+									href="https://drive.google.com/file/d/19IIF8gI5dTG8EPisr7OkHbpHQ5_oHQIl/view"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Resume
+								</a>
 							</button>
 						</ul>
 					</nav>
