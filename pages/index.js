@@ -15,7 +15,8 @@ import p2image2 from "../public/project2/p2_bookdetail.png";
 import p2image3 from "../public/project2/p2_createbook.png";
 import p2image4 from "../public/project2/p2_profile.png";
 
-import profile from "../public/profile.jpg";
+import Image from "next/image";
+import profileImage from "../public/profile.jpg";
 import { useState } from "react";
 import ScrollToTop from "react-scroll-to-top";
 
@@ -90,7 +91,7 @@ export default function Home() {
 					</div>
 					<div className="relative mx-auto mt-20 h-80 w-80 overflow-hidden rounded-full md:h-96 md:w-96">
 						<Image
-							src={profile}
+							src={profileImage}
 							layout="fill"
 							objectFit="cover"
 							alt=""
