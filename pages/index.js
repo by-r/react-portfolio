@@ -94,7 +94,12 @@ export default function Home() {
 						</a>
 					</div>
 					<div className="relative mx-auto mt-20 h-80 w-80 overflow-hidden rounded-full md:h-96 md:w-96">
-						<Image src={profile} layout="fill" objectFit="cover" />
+						<Image
+							src={profile}
+							layout="fill"
+							objectFit="cover"
+							alt=""
+						/>
 					</div>
 				</section>
 
