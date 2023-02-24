@@ -15,7 +15,7 @@ import p2image2 from "../public/project2/p2_bookdetail.png";
 import p2image3 from "../public/project2/p2_createbook.png";
 import p2image4 from "../public/project2/p2_profile.png";
 
-import profile from "../public/profile.JPG";
+import profile from "../public/profile.jpg";
 import { useState } from "react";
 import ScrollToTop from "react-scroll-to-top";
 
