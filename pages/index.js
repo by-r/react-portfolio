@@ -1,17 +1,32 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
-import { AiFillFolderOpen, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import Image from "next/legacy/image";
-import design from "../public/design.png";
-import code from "../public/code.png";
-import consulting from "../public/consulting.png";
+
+import { AiFillFolderOpen, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { FaPhp, FaHtml5, FaCss3Alt } from "react-icons/fa";
+import { DiDjango, DiBootstrap } from "react-icons/di";
+
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
+
+import p1image1 from "../public/project1/p1_menu.png";
+import p1image2 from "../public/project1/p1_orderpage.png";
+import p1image3 from "../public/project1/p1_admindashboard.png";
+
+import p2image1 from "../public/project2/p2_catalog.png";
+import p2image2 from "../public/project2/p2_bookdetail.png";
+import p2image3 from "../public/project2/p2_createbook.png";
+import p2image4 from "../public/project2/p2_profile.png";
+
 import profile from "../public/profile.JPG";
 import { useState } from "react";
 import ScrollToTop from "react-scroll-to-top";
+
+import React, { Component } from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -88,20 +103,42 @@ export default function Home() {
 					<div>
 						<h3 className="py-1 text-3xl">Projects</h3>
 						<p className="text-md py-2 leading-8 text-gray-800">
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Ipsam voluptates rem placeat sed iste possimus
-							illo, ex cumque vitae. Voluptatibus maxime alias
-							rerum nam inventore facilis molestias in ex quo!
+							Here, you will find a collection of projects that
+							showcase my skills. Using programming languages such
+							as Python and PHP (for now), I have implemented best
+							practices in software engineering, including version
+							control, testing, and documentation, to ensure
+							high-quality final products.
 						</p>
 					</div>
-					<div className="gap-10 lg:flex">
+					<div className="gap-10 md:flex lg:flex">
 						<div className="my-10 rounded-xl p-10 text-center shadow-lg">
-							<Image
-								className="mx-auto"
-								src={design}
-								width={100}
-								height={100}
-							/>
+							<div>
+								<Carousel showThumbs={false}>
+									<div>
+										<Image src={p2image1} />
+										<p className="legend">
+											Book Catalog View
+										</p>
+									</div>
+									<div>
+										<Image src={p2image2} />
+										<p className="legend">
+											Book Detail View
+										</p>
+									</div>
+									<div>
+										<Image src={p2image3} />
+										<p className="legend">
+											Book Create View
+										</p>
+									</div>
+									{/* <div>
+										<Image src={p2image4} />
+										<p className="legend">Image 1</p>
+									</div> */}
+								</Carousel>
+							</div>
 							<h3 className="pt-8 pb-2 text-lg font-medium">
 								Library Systems
 							</h3>
@@ -111,46 +148,59 @@ export default function Home() {
 								trying to finish it and figuring out Django's
 								MTV structure
 							</p>
-							<h4 className="py-4 text-teal-600">Technologies</h4>
-							<p className="py-1 text-gray-800">Django</p>
+							<h4 className="text-gray-800-900-900 py-4">
+								Technologies
+							</h4>
+							<div className="flex justify-center gap-16 py-3 text-5xl text-gray-600">
+								<a>
+									<DiDjango />
+								</a>
+								<a>
+									<DiBootstrap />
+								</a>
+							</div>
 						</div>
 						<div className="my-10 rounded-xl p-10 text-center shadow-lg">
-							<Image
-								className="mx-auto"
-								src={consulting}
-								width={100}
-								height={100}
-							/>
+							<div>
+								<Carousel showThumbs={false}>
+									<div>
+										<Image src={p1image1} />
+										<p className="legend">Main menu</p>
+									</div>
+									<div>
+										<Image src={p1image2} />
+										<p className="legend">Order Page</p>
+									</div>
+									<div>
+										<Image src={p1image3} />
+										<p className="legend">
+											Admin Dashboard
+										</p>
+									</div>
+								</Carousel>
+							</div>
 							<h3 className="pt-8 pb-2 text-lg font-medium">
-								Library Systems
+								Food Ordering Systems
 							</h3>
 							<p className="py-2">
-								Tried going all-in by building a full stack
-								webapp, currently a work-in-progress, still
-								trying to finish it and figuring out Django's
-								MTV structure
+								Project that was built for my final assesment
+								during my studies, handcrafted without using any
+								CSS library and vanilla PHP. Not my best work, I promise you.
 							</p>
-							<h4 className="py-4 text-teal-600">Technologies</h4>
-							<p className="py-1 text-gray-800">Django</p>
-						</div>
-						<div className="my-10 rounded-xl p-10 text-center shadow-lg">
-							<Image
-								className="mx-auto"
-								src={code}
-								width={100}
-								height={100}
-							/>
-							<h3 className="pt-8 pb-2 text-lg font-medium">
-								Library Systems
-							</h3>
-							<p className="py-2">
-								Tried going all-in by building a full stack
-								webapp, currently a work-in-progress, still
-								trying to finish it and figuring out Django's
-								MTV structure
-							</p>
-							<h4 className="py-4 text-teal-600">Technologies</h4>
-							<p className="py-1 text-gray-800">Django</p>
+							<h4 className="text-gray-800-900-900 py-4">
+								Technologies
+							</h4>
+							<div className="flex justify-center gap-16 py-3 text-5xl text-gray-600">
+								<a>
+									<FaPhp />
+								</a>
+								<a>
+									<FaHtml5 />
+								</a>
+								<a>
+									<FaCss3Alt />
+								</a>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -206,7 +256,10 @@ export default function Home() {
 					</div>
 				</section>
 			</main>
-			<ScrollToTop smooth className="mt-auto flex justify-center pt-1 animate-pulse" />
+			<ScrollToTop
+				smooth
+				className="mt-auto flex animate-pulse justify-center pt-1"
+			/>
 		</div>
 	);
 }
